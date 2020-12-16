@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/custom.css">
-    <title>Christmas tree decor</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <title>Christmas Tree decorator</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Christmas Tree decorator</h1>
+        <div>Catch the falling ornaments and decorate this Christmas tree!</div>
+    </header>
 
+    <main>
+        <!-- <div class="happy-holidays"></div> -->
+        
+        <div class="christmas-tree">
+            <img src="./img/tree.png" alt="Christmas tree">
+        </div>
+        <div class="ornaments">
+            <div id="top" onclick="moveOrnament(id)" class="red circle"></div>
+            <div id="middle" onclick="moveOrnament(id)" class="blue circle"></div>
+            <div id="bottom-left" onclick="moveOrnament(id)" class="purple circle"></div>
+            <div id="bottom-right" onclick="moveOrnament(id)" class="yellow circle"></div>
+            <div id="bottom-center" onclick="moveOrnament(id)" class="pink circle"></div>
+        </div>
+    </main>
+    <footer>
+        <h2>Merry Christmas and a Happy New Year!</h2>
+    </footer>
+    
     <script src="./js/main.js"></script>
 </body>
 </html>

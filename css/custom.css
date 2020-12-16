@@ -1,0 +1,138 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-break: break-all;
+}
+
+body {
+    background-color: #fff;
+}
+
+header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+header > div {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+main {
+    background-color: #6ac3fd;
+    width: 800px;
+    height: 600px;
+    border-radius: 40px;
+    position: relative;
+    margin-left: calc(50% - 400px);
+}
+
+    main .happy-holidays {
+        text-align: center;
+        font-size: 70px;
+        padding-top: 90px;
+        font-family: 'Lobster', cursive;
+        color: #0038b6; 
+    }
+
+    main .christmas-tree {
+        position: absolute;
+        bottom: 10px;
+        left: 280px;
+    }
+
+        .christmas-tree img {
+            height: 350px;
+        }
+
+    .ornaments .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+
+    .ornaments .red.circle {
+        position: absolute;
+        left: 30px;
+        animation: fall;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+    }
+
+    .ornaments .blue.circle {
+        position: absolute;
+        left: 200px;
+        animation: fall;
+        animation-duration: 11s;
+        animation-iteration-count: infinite;
+    }
+
+    .ornaments .purple.circle {
+        position: absolute;
+        left: 550px;
+        animation: fall;
+        animation-duration: 9s;
+        animation-iteration-count: infinite;
+    }
+
+    .ornaments .yellow.circle {
+        position: absolute;
+        left: 730px;
+        animation: fall;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    .ornaments .pink.circle {
+        position: absolute;
+        left: 650px;
+        animation: fall;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+    }
+
+@keyframes fall {
+    0% {
+        margin-top: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 550px;
+        opacity: 0;
+    }
+}
+
+    .red {
+        background-color: #cf0018;
+    }
+
+    .blue {
+        background-color: #0038b6;
+    }
+
+    .purple {
+        background-color:#5f0792;
+    }
+
+    .yellow {
+        background-color: #f5f20f;
+    }
+
+    .pink {
+        background-color:#cd15a4;
+    }
+
+footer {
+    text-align: center;
+}
+
+footer h2 {
+    margin-top: 20px;
+}
