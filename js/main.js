@@ -17,7 +17,7 @@ function moveOrnament(ornament) {
         document.getElementById(ornament).style.cssText = "animation: none; left: 380px; top: 500px;";
     }
     count++
-    if (count > 4) {
+    if (count === 5) {
         const DOM = document.querySelector('main');
         let text = `<div style="text-align: center;
         font-size: 70px;
